@@ -7,3 +7,4 @@
 5. color flipper:https://poojagupta-github.github.io/JavaScript-Projects/color%20flipper/index.html
 6. navbar:https://poojagupta-github.github.io/JavaScript-Projects/navbar/index.html
 7. scroll:https://poojagupta-github.github.io/JavaScript-Projects/scroll/index.html
+8. questions:https://poojagupta-github.github.io/JavaScript-Projects/questions/index.html
