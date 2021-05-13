@@ -8,5 +8,5 @@
 6. navbar:https://poojagupta-github.github.io/JavaScript-Projects/navbar/index.html
 7. scroll:https://poojagupta-github.github.io/JavaScript-Projects/scroll/index.html
 8. questions:https://poojagupta-github.github.io/JavaScript-Projects/questions/index.html
-9. simple form animation:https://poojagupta-github.github.io/JavaScript-Projects/simpleformanimation/index.html
+9. simple form animation:https://poojagupta-github.github.io/JavaScript-Projects/simple%20form%20animation/index.html
 10. reviews:https://poojagupta-github.github.io/JavaScript-Projects/Reviews/index.html
