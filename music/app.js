@@ -10,7 +10,7 @@ const pausesong = () =>{
 
 
 let mysong1 = new Audio();
-mysong1.src = 'up.mp3';
+mysong1.src = 'memories.mp3';
 const playsong1 = () =>{
     mysong1.play();
 }
@@ -20,7 +20,7 @@ const pausesong1 = () =>{
 }
 
 let mysong2 = new Audio();
-mysong2.src = 'lol.mp3';
+mysong2.src = 'memories.mp3';
 const playsong2 = () =>{
     mysong2.play();
 }
