@@ -117,6 +117,7 @@ header nav .logo{
 .ani1{
     animation-name: anime1;
     animation-duration: 4s;
+    animation-iteration-count: 5;
 }
 
 @keyframes anime1{
@@ -136,6 +137,7 @@ header nav .logo{
 .ani2{
     animation-name: anime2;
     animation-duration: 4s;
+    animation-iteration-count: 5;
 }
 
 @keyframes anime2{
@@ -154,6 +156,7 @@ header nav .logo{
 .ani3{
     animation-name: anime3;
     animation-duration: 4s;
+    animation-iteration-count: 5;
 }
 
 @keyframes anime3{
@@ -432,7 +435,7 @@ contact----------------
 
 .foot{
     text-align: center;
-    background: var(--rosepink);
+    background: var(--dark);
     padding: 40px 0;
     /* border: 2px solid yellow; */
 }
