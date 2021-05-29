@@ -8,7 +8,7 @@ let newsAccordian = document.getElementById('newsAccordian');
 
 // create an ajax get request
 const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=36872bfff8994108be70c46b512e7ec2', true);
+xhr.open('GET', ' https://gnews.io/api/v4/top-headlines?token=f9ad591f97d5e6e6cd75a5de093a8897', true);
 
 xhr.send();
 
@@ -70,5 +70,5 @@ xhr.onload = function () {
 //         </div>
 //     </div>
 // </div>`
-
+// f9ad591f97d5e6e6cd75a5de093a8897
 
