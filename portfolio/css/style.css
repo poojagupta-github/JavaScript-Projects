@@ -329,7 +329,7 @@ header nav .logo{
     }
     #edu .container .card-wrapper .card .img-wrapper img{
         height: 185px;
-        width: 274px;
+        width: 100%;
     }
     #edu .container .card-wrapper .card{
         /* height: 500px; */
