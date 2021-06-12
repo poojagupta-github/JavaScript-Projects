@@ -10,6 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "grid") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "grid";
+          }
+        }
+        </script>
 </head>
 
 <body>
@@ -21,7 +34,7 @@
                     <div class="logo">
                         <img src="images/pg" alt="">
                     </div>
-                    <div>
+                    <div class="nav-hyperlinks">
                         <a href="#">Home</a>
                         <a href="#abt">About</a>
                         <a href="#edu">Education</a>
@@ -30,18 +43,31 @@
                     </div>
                 </div>
 
-                <div class="right">
-                    <button class="btn btn-primary"><a href="#con">Contact</a></button>
+                <div class="collapsed-menu">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                
+
+                <div class="right contact-button">
+                    <button class="button-portfolio  button-portfolio-primary"><a href="#con">Contact</a></button>
                 </div>
             </nav>
 
+            <div class="collapsed-menu-dropdown">
+                <div id="myLinks">
+                    <a href="#">Home</a>
+                    <a href="#abt">About</a>
+                    <a href="#edu">Education</a>
+                    <a href="#certi">Certifications</a>
+                    <a href="#con">Contact</a>
+                </div>
+            </div>
 
-            <div class="hero flex items-center justify-between">
-
-                <!-- <div class="left flex-1 flex justify-center">
-                    <img src="images/heroimg.jpg" alt="">
-                </div> -->
-                <div class="right ">
+            <div class="row hero">
+                <div class="right">
                     <h3 class="ani3">Pooja Gupta</h3>
                     <div class="animation flex">
                         <div class="ani1">
@@ -56,7 +82,8 @@
                     <p>Currently pursuing my Bachelor's in CET , Bhubaneswar.
                     </p>
                     <div>
-                        <button class="btn btn-secondary"><a target="_blank" href="./docs/Pooja-Gupta-CV.pdf">DOWNLOAD
+                        <button class="button-portfolio button-portfolio-secondary"><a target="_blank"
+                                href="./docs/Pooja-Gupta-CV.pdf">DOWNLOAD
                                 CV</a></button>
                     </div>
                 </div>
@@ -71,7 +98,7 @@
             <div class="flex-1 flex justify-center">
                 <img class="about-me" src="images/aboutimg.jpg" alt="">
             </div>
-            <div class="flex-1 ">
+            <div class="about-me-text flex-1 ">
                 <div class="container flex flex-dir justify-center">
                     <h1>About <span>Me</span></h1>
                     <h3>Hello! i'm Pooja Gupta</h3>
@@ -95,10 +122,12 @@
                         <a href="#"><img src="./images/instagram.png" alt=""></a>
                     </div> -->
                     <div class="social">
-                        <a target="_blank" href="https://linkedin.com/in/pooja-gupta-cet"><img src="./images/linkedin.png" alt=""></a>
-                        <a target="_blank" href="https://github.com/poojagupta-github"><img src="./images/github.png" alt=""></a>
+                        <a target="_blank" href="https://linkedin.com/in/pooja-gupta-cet"><img
+                                src="./images/linkedin.png" alt=""></a>
+                        <a target="_blank" href="https://github.com/poojagupta-github"><img src="./images/github.png"
+                                alt=""></a>
                     </div>
-                   
+
                 </div>
 
             </div>
@@ -245,7 +274,8 @@
         <section class="container">
             <h1>I <span>Am</span> Available <span>For</span> Internship</h1>
             <p>We provide high standard website for your business solutions</p>
-            <button class="btn btn-secondary"><a target="_blank" href="./docs/Pooja-Gupta-CV.pdf">DOWNLOAD
+            <button class="button-portfolio button-portfolio-secondary"><a target="_blank"
+                    href="./docs/Pooja-Gupta-CV.pdf">DOWNLOAD
                     CV</a></button>
 
         </section>

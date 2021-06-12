@@ -40,9 +40,7 @@ header{
 }
 
 header .container{
-    max-width: 1152px;
-    padding: 0 15px;
-    margin: auto;
+    padding: 0 24px;
 }
 header .logo img{
     width: 60px;
@@ -67,7 +65,7 @@ header nav .left a:hover{
 }
 
 header nav{
-     padding:20px ;
+     padding:20px 0;
 }     
 
 header nav .logo{
@@ -114,64 +112,280 @@ header nav .logo{
       color: var(--light);
       font-weight: bold;
 }
-.ani1{
-    animation-name: anime1;
-    animation-duration: 4s;
-    animation-iteration-count: 5;
+
+@media screen and (min-width:380px) {
+    right {
+        max-width: 50%;
+    }
+
+    .collapsed-menu {
+        display: none;
+    }
+    .collapsed-menu-dropdown{
+      display: none;
+    }
+    .ani1{
+        animation-name: anime1;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes anime1{
+        0%{
+          transform: translateX(100%);
+        }
+    
+        70%{
+          transform: translateX(-40%);
+        }
+        100%{
+        transform: translateX(0);
+        }
+    
+    
+    }
+    .ani2{
+        animation-name: anime2;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes anime2{
+        0%{
+          transform: translateX(-130%);
+        }
+    
+        70%{
+          transform: translateX(100%);
+        }
+        100%{
+        transform: translateX(0);
+        }
+    
+    }
+    .ani3{
+        animation-name: anime3;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes anime3{
+        0%{
+          transform: translateY(200%);
+        }
+    
+        70%{
+          transform: translateY(-200%);
+        }
+        100%{
+        transform: translateY(0);
+        }
+    
+    }
 }
 
-@keyframes anime1{
-    0%{
-      transform: translateX(100%);
+@media screen and (max-width:380px) {
+    right {
+        max-width: 100%;
+    }
+    .nav-hyperlinks{
+        display: none;
+    }
+    
+    .contact-button {
+        display: none;
     }
 
-    70%{
-      transform: translateX(-60%);
-    }
-    100%{
-    transform: translateX(0);
+    .collapsed-menu {
+        display: block;
     }
 
+    .collapsed-menu-dropdown #myLinks {
+        display: none;
+    }
 
+    .collapsed-menu-dropdown{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .collapsed-menu-dropdown #myLinks a {
+        text-align: right;
+        padding: 10px 8px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .collapsed-menu a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .collapsed-menu a.icon {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+      }
+      
+      .collapsed-menu a:hover {
+        background: none;
+        color: white;
+      }
+
+	.ani1{
+        animation-name: anime1;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+    h1 { 
+        font-size: 24px !important;
+    }
+
+    
+    @keyframes anime1{
+        0%{
+          transform: translateX(80%);
+        }
+    
+        70%{
+          transform: translateX(-15%);
+        }
+        100%{
+        transform: translateX(0);
+        }
+    
+    
+    }
+    .ani2{
+        animation-name: anime2;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+    h1>span {
+        font-size: 24px;
+    }
+    
+    @keyframes anime2{
+        0%{
+          transform: translateX(-80%);
+        }
+    
+        70%{
+          transform: translateX(45%);
+        }
+        100%{
+        transform: translateX(0);
+        }
+    
+    }
+    .ani3{
+        animation-name: anime3;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    
+    @keyframes anime3{
+        0%{
+          transform: translateY(150%);
+        }
+    
+        70%{
+          transform: translateY(-150%);
+        }
+        100%{
+        transform: translateY(0);
+        }
+    
+    }
+    .contain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain .about-me{
+        height: 144px;
+        width: 136px;
+        border: 4px solid var(--rosepink);
+        border-radius: 150px;
+    }
+    .about .flex .about-me-text .container{
+        padding:35px;
+      
+        
+    }
+    #edu .container .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    #edu .container .card-wrapper .card .img-wrapper img{
+        height: 185px;
+        width: 274px;
+    }
+    #edu .container .card-wrapper .card{
+        /* height: 500px; */
+    }
+    #edu .container .card-wrapper .card .card-content h1{
+        font-size:20px;
+        
+    }
+    #edu .container .card-wrapper .card .card-content{
+        padding:20px 30px 20px 30px;
+    }
+    #edu{
+       
+        clip-path: polygon(0 0,100% 0,100% 100%,77% 97%,0 100%);
+   }
+   #certi .container .card-wrapper{
+       display: flex;
+       flex-direction: column;
+   }
+   #certi .container .card-wrapper .card h2{
+       margin: 0px;
+   }
+
+   .freelancer .container{
+       padding: 20px;
+       
+   }
+   section .freelancer{
+    clip-path: polygon(0 0,100% 0,100% 100%,85% 95%,0 100%);
+   }
+   #con .container {
+       width: 80%;
+   }
+   #con .container .card-wrapper{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+   }
+   #con .container .card-wrapper .card{
+       margin: 15px;
+       height: 150px;
+   }
+   #con .container .card-wrapper .card img{
+    height: 63px;
+    width: 118px;
+    margin: auto;
+   }
+   #con .container .card-wrapper .card h2{
+       font-size: 20px;
+   }
+   #con .container .card-wrapper .card h5{
+       font-size: 15px;
+   }
+   
 }
-.ani2{
-    animation-name: anime2;
-    animation-duration: 4s;
-    animation-iteration-count: 5;
-}
 
-@keyframes anime2{
-    0%{
-      transform: translateX(-130%);
-    }
-
-    70%{
-      transform: translateX(100%);
-    }
-    100%{
-    transform: translateX(0);
-    }
-
-}
-.ani3{
-    animation-name: anime3;
-    animation-duration: 4s;
-    animation-iteration-count: 5;
-}
-
-@keyframes anime3{
-    0%{
-      transform: translateY(200%);
-    }
-
-    70%{
-      transform: translateY(-200%);
-    }
-    100%{
-    transform: translateY(0);
-    }
-
-}
 .about{
     /* padding: 40px 0;
     width: 80%;
@@ -364,9 +578,11 @@ contact----------------
      margin: auto;
  }
 .contact .card img{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 118px;
+    margin: auto;
     margin-bottom: 30px;
+    
     /* position: absolute;
     left: 50%;
     transform: translateX(-50%); */
@@ -392,9 +608,13 @@ contact----------------
     transition: all .3s ease-in-out;
 
 }
-.contact h5{
+.contact h2{
+    font-size: 22px;
+}
+#con .container .card-wrapper .card h5{
     color: var(--ternary);
     margin-bottom: 40px;
+    font-size: 16px;
 }
 
 .contact .input-wrap{
@@ -540,7 +760,7 @@ section.blog .container .card-wrapper{
 }
 .card img{
     height: 250px;
-    width: 400px;
+    width: 375px;
     /* height: 100%;
     width: 100%;
     object-fit: cover; */
