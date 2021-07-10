@@ -11,5 +11,6 @@
 10. reviews:https://poojagupta-github.github.io/JavaScript-Projects/Reviews/index.html
 11. DragonGame: https://poojagupta-github.github.io/JavaScript-Projects/ActionGame/index.html
 12. NewsWebsite:https://poojagupta-github.github.io/JavaScript-Projects/NewsWebsite/index.html
+13. NotesApp:https://poojagupta-github.github.io/JavaScript-Projects/MyNotesApp/index.html
 
 **PORTFOLIO**: https://poojagupta-github.github.io/JavaScript-Projects/portfolio/index.html
