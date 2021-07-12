@@ -712,6 +712,13 @@ section.blog .container .card-wrapper{
 .blog .card-wrapper .card{
     background: var(--pure);
 }
+
+.blog .card-wrapper .card:hover{
+    transform:scale(1.07);
+    transition: all .4s ease-in;
+
+}
+
 .card .card-content{
     padding:20px 40px 40px 40px;
     line-height: 1.5;
