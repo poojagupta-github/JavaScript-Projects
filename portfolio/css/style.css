@@ -713,11 +713,7 @@ section.blog .container .card-wrapper{
     background: var(--pure);
 }
 
-.blog .card-wrapper .card:hover{
-    transform:scale(1.07);
-    transition: all .4s ease-in;
 
-}
 
 .card .card-content{
     padding:20px 40px 40px 40px;
@@ -772,3 +768,22 @@ section.blog .container .card-wrapper{
     width: 100%;
     object-fit: cover; */
 }
+/*-------
+hover blog/education
+-------*/
+
+.blog .container .card-wrapper .card:hover{
+    transform: scale(1.08);
+    transition: all .4s ease-in;
+    cursor: pointer;
+}
+
+.blog .container .card-wrapper .card:hover {
+    background: var(--secondary);
+}
+.blog .container .card-wrapper .card:hover h1{
+   
+    color: var(--pure);
+    
+}
+
